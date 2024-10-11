@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/book_social_network
-    username: username
-    password: password
+    username: postgres
+    password: 1234
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -34,6 +34,10 @@ application:
     jwt:
       secret-key: 404E6352665564586E3272357538782F413F4428472848625064536756685970
       expiration: 8640000
+  mailing:
+     frontend:
+       activation-url: http://localhost:4200/activate-account
+
   file:
     uploads:
           photos-output-path: ./uploads
@@ -43,5 +47,3 @@ application:
 #      resourceserver:
 #        jwt:
 #          issuer-uri: "http://localhost:9090/realms/book-social-network"
-server:
-  port: 8088
