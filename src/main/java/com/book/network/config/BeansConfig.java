@@ -43,10 +43,10 @@ public class BeansConfig {
         return new BCryptPasswordEncoder();
     }
 
-//    @Bean
-//    public AuditorAware<String> auditorAware() {
-//        return new ApplicationAuditAware();
-//    }
+    @Bean
+    public AuditorAware<String> auditorAware() {
+        return new ApplicationAuditAware();
+    }
 
     @Bean
     public CorsFilter corsFilter() {
