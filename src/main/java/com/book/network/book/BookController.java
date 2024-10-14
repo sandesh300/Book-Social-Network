@@ -109,6 +109,12 @@ public class BookController {
         return ResponseEntity.ok(service.returnBorrowedBook(bookId, connectedUser));
     }
 
-
+    @PatchMapping("borrow/return/approve/{book-id}")
+    public ResponseEntity<Integer> approveReturnBorrowBook(
+            @PathVariable("book-id") Integer bookId,
+            Authentication connectedUser
+    ) {
+        return ResponseEntity.ok(service.approveReturnBorrowedBook(bookId, connectedUser));
+    }
 
 }
