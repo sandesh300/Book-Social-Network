@@ -1,6 +1,7 @@
 package com.book.network.book;
 
 import com.book.network.common.PageResponse;
+import com.book.network.exception.OperationNotPermittedException;
 import com.book.network.history.BookTransactionHistory;
 import com.book.network.history.BookTransactionHistoryRepository;
 import com.book.network.user.User;
@@ -119,8 +120,20 @@ public class BookService {
         );
     }
 
+        public Integer updateShareableStatus(Integer bookId, Authentication connectedUser) {
+            Book book = bookRepository.findById(bookId)
+                    .orElseThrow(() -> new EntityNotFoundException("No book found with ID:: " + bookId));
+             User user = ((User) connectedUser.getPrincipal());
+            if (!Objects.equals(book.getCreatedBy(), connectedUser.getName())) {
+                throw new OperationNotPermittedException("You cannot update others books shareable status");
+            }
+            book.setShareable(!book.isShareable());
+            bookRepository.save(book);
+            return bookId;
+        }
 
 
+    }
 
 
 
