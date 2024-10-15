@@ -2,6 +2,7 @@ package com.book.network.book;
 
 import com.book.network.common.PageResponse;
 import com.book.network.exception.OperationNotPermittedException;
+import com.book.network.file.FileStorageService;
 import com.book.network.history.BookTransactionHistory;
 import com.book.network.history.BookTransactionHistoryRepository;
 import com.book.network.user.User;
@@ -31,7 +32,7 @@ public class BookService {
     private final BookMapper bookMapper;
     private final BookRepository bookRepository;
     private final BookTransactionHistoryRepository bookTransactionHistoryRepository;
-
+    private final FileStorageService fileStorageService;
 
     public Integer save(BookRequest request, Authentication connectedUser) {
          User user = ((User) connectedUser.getPrincipal());
@@ -210,6 +211,14 @@ public class BookService {
         return bookTransactionHistoryRepository.save(bookTransactionHistory).getId();
     }
 
+    public void uploadBookCoverPicture(MultipartFile file, Authentication connectedUser, Integer bookId) {
+        Book book = bookRepository.findById(bookId)
+                .orElseThrow(() -> new EntityNotFoundException("No book found with ID:: " + bookId));
+        User user = ((User) connectedUser.getPrincipal());
+        var profilePicture = fileStorageService.saveFile(file, book, user.getId());
+        book.setBookCover(profilePicture);
+        bookRepository.save(book);
+    }
 }
 
 
