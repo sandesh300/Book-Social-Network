@@ -3,6 +3,26 @@
 The **Book Management API** allows users to register, authenticate, and manage a library of books with features such as borrowing, returning, sharing, and archiving. Every endpoint requires user authentication using JWT tokens.
 
 ---
+## Features
+
+- **User Registration:** Users can register for a new account.
+- **Email Validation:** Accounts are activated using secure email validation codes.
+- **User Authentication:** Existing users can log in securely.
+- **Book Management:** Users can create, update, share, and archive their books.
+- **Book Borrowing:** Necessary checks to determine if a book can be borrowed.
+- **Book Returning:** Users can return borrowed books.
+- **Book Return Approval:** Functionality to approve book returns.
+
+## Technologies Used
+
+- Spring Boot 3
+- Spring Security 6
+- JWT Token Authentication
+- Spring Data JPA
+- JSR-303 and Spring Validation
+- OpenAPI and Swagger UI Documentation
+- Docker
+------
 
 ## 📌 API Endpoints
 
