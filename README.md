@@ -1,4 +1,4 @@
-# 📚 Book Management API Documentation
+# Book Social Network
 
 Book Social Network is a full-stack application that enables users to manage their book collections and engage with a community of book enthusiasts. It offers features such as user registration, secure email validation, book management (including creation, updating, sharing, and archiving), book borrowing with checks for availability, book return functionality, and approval of book returns. The application ensures security using JWT tokens and adheres to best practices in REST API design. The backend is built with Spring Boot 3 and Spring Security 6, while the frontend is developed using Angular with Bootstrap for styling.
 
@@ -58,7 +58,7 @@ By following this project,
 ![class-diagram](https://github.com/user-attachments/assets/35de6f59-e51d-461f-b22a-715b4865b025)
 
 ------
-## 📌 API Endpoints
+## API Endpoints
 
 ### **User Authentication**
 
@@ -103,13 +103,12 @@ By following this project,
 
 ### **Book Management**
 
-## 🔒 Authorization
+## Authorization
 All endpoints require a JWT token.  
 Include the following header in all requests:
 ```http
 Authorization: Bearer <JWT_access_token>
 ```
-
 ---
 
 ## Endpoints
@@ -399,7 +398,7 @@ To set up the backend of the Book Social Network project, follow these steps:
 
 5. Access the API documentation using Swagger UI:
 
-  Open a web browser and go to `http://localhost:8088/api/v1/swagger-ui/index.html
+Open a web browser and go to `http://localhost:8088/api/v1/swagger-ui/index.html
 
 6. Access MailDev to receive emails (token receiving):
 
