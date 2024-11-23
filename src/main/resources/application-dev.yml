@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/book_social_network
+    url: jdbc:postgresql://localhost:5432/book-social-network
     username: postgres
     password: 1234
     driver-class-name: org.postgresql.Driver
@@ -41,9 +41,11 @@ application:
   file:
     uploads:
           photos-output-path: ./uploads
+server:
+    port: 8088
 
-#  security:
-#    oauth2:
-#      resourceserver:
-#        jwt:
-#          issuer-uri: "http://localhost:9090/realms/book-social-network"
+security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: "http://localhost:9090/realms/book-social-network"
