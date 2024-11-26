@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.book.network</groupId>
 	<artifactId>book-network</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<name>Book-Network-Api</name>
 	<description>Spring Boot to build a book social network </description>
 	<url/>
