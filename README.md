@@ -406,4 +406,11 @@ Open a web browser and go to `http://localhost:8088/api/v1/swagger-ui/index.html
   Open a web browser and go to `http://localhost:1080/#/
 
 --- 
+### Login Page
+![Screenshot (62)](https://github.com/user-attachments/assets/6a4b99dc-934f-4ab4-a23a-119b16cccc8e)
+
+### Register Page
+![Screenshot (63)](https://github.com/user-attachments/assets/1199ffa3-6bfc-481a-aecc-e12bf87278f0)
+
+### Email Verification code 
 
