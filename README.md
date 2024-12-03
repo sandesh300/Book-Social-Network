@@ -413,4 +413,15 @@ Open a web browser and go to `http://localhost:8088/api/v1/swagger-ui/index.html
 ![Screenshot (63)](https://github.com/user-attachments/assets/1199ffa3-6bfc-481a-aecc-e12bf87278f0)
 
 ### Email Verification code 
+![Screenshot (68)](https://github.com/user-attachments/assets/fce37064-77d7-4080-9293-ca7bfc2d14b4)
+
+### Book page
+![Screenshot (64)](https://github.com/user-attachments/assets/ea4ac49d-2b65-4fa4-99ea-b3a4e9dfdc0e)
+
+### Book Create Page
+![Screenshot (65)](https://github.com/user-attachments/assets/d632c7fb-4ab3-4ba3-901d-fe9e5a70a29a)
+
+
+
+
 
