@@ -34,6 +34,7 @@ Book Social Network is a full-stack application that enables users to manage the
 - OpenAPI Generator for Angular
 - Bootstrap
 ------
+
 ## Learning Objectives
 
 By following this project, 
