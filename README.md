@@ -15,7 +15,6 @@ Book Social Network is a full-stack application that enables users to manage the
 
 ## Technologies Used
 ### Backend 
-
 - Spring Boot 3
 - Spring Security 6
 - JWT Token Authentication
@@ -28,7 +27,6 @@ Book Social Network is a full-stack application that enables users to manage the
 - PostgreSQL
 
 ### Frontend 
-
 - Angular
 - Component-Based Architecture
 - Lazy Loading
